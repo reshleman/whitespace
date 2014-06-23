@@ -83,3 +83,8 @@ article {
     }
   }
 }
+
+// Hide ugly shadow in Gist caption text
+.gist .gist-file .gist-meta {
+  text-shadow: none !important
+}
