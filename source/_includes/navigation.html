@@ -4,13 +4,6 @@
     <li><a href="{{ site.subscribe_email }}" rel="subscribe-email" title="subscribe via email">Email</a></li>
   {% endif %}
 </ul>
-  {% if site.googleplus_user %}
-  {% unless site.googleplus_hidden %}
-<ul class="subscription">
-  <li><a href="https://plus.google.com/{{ site.googleplus_user }}" rel="website-gplus" title="Google+ Profile">Google+</a></li>
-</ul>
-  {% endunless %}
-  {% endif %}
   {% if site.simple_search %}
 <form action="{{ site.simple_search }}" method="get">
   <fieldset role="search">
@@ -18,5 +11,32 @@
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
+  {% endif %}
+  {% if site.email %}
+<ul class="subscription">
+  <li><a href="mailto:{{ site.email}}" rel="email" title="Email Me">Email</a></li>
+</ul>
+  {% endif %}
+  {% if site.linkedin_user %}
+<ul class="subscription">
+  <li><a href="https://linkedin.com/in/{{ site.linkedin_user}}" rel="website-linkedin" title="LinkedIn Profile">LinkedIn</a></li>
+</ul>
+  {% endif %}
+  {% if site.github_user %}
+<ul class="subscription">
+  <li><a href="https://github.com/{{ site.github_user}}" rel="website-github" title="GitHub Profile">GitHub</a></li>
+</ul>
+  {% endif %}
+  {% if site.twitter_user %}
+<ul class="subscription">
+  <li><a href="https://twitter.com/{{ site.twitter_user}}" rel="website-twitter" title="Twitter Feed">Twitter</a></li>
+</ul>
+  {% endif %}
+  {% if site.googleplus_user %}
+  {% unless site.googleplus_hidden %}
+<ul class="subscription">
+  <li><a href="https://plus.google.com/{{ site.googleplus_user }}" rel="website-gplus" title="Google+ Profile">Google+</a></li>
+</ul>
+  {% endunless %}
   {% endif %}
 {% include custom/navigation.html %}
