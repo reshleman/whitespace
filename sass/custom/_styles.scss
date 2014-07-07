@@ -84,7 +84,24 @@ article {
   }
 }
 
+// Additional Non-Theme User Styles
+
 // Hide ugly shadow in Gist caption text
 .gist .gist-file .gist-meta {
   text-shadow: none !important
+}
+
+// Some styling for markdown tables 
+// (Child selectors to skip styling fenced code blocks)
+
+div .entry-content > table {
+  width: 100%;
+  margin-bottom: 1em;
+}
+div .entry-content > table > thead > tr > th {
+  padding: .2em;
+  background-color: #CCC;
+}
+div .entry-content > table > tbody > tr > td {
+ padding: .2em;
 }
