@@ -5,6 +5,24 @@
 
 // Some Non-Theme User Styles
 
+// Brighten links
+
+a {
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: color 0 ease-in;
+  transition: none;
+}
+
+a, a:active, a:visited {
+  color: #4883BD;
+}
+
+a:hover {
+  color: #839AB2;
+  text-decoration: underline !important;
+}
+
 // Hide ugly shadow in Gist caption text
 .gist .gist-file .gist-meta {
   text-shadow: none !important
