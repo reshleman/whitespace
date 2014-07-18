@@ -23,6 +23,14 @@ a:hover {
   text-decoration: underline !important;
 }
 
+article a, article a:visited, article a:active, article a:hover {
+  text-decoration: none;
+}
+
+#content .blog-index article h1 a:hover {
+  color: #666;
+}
+
 // Hide ugly shadow in Gist caption text
 .gist .gist-file .gist-meta {
   text-shadow: none !important
